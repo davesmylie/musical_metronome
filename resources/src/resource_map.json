@@ -1,0 +1,11 @@
+
+{"friendlyVersion": "0.1",
+ "versionDefName": "VERSION",
+ "media": [
+	   {
+	    "type":"png",
+	    "defName":"IMAGE_MENU_ICON",
+	    "file":"images/metronomeb.png"
+	   }
+	  ]
+}
