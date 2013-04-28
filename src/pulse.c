@@ -56,6 +56,8 @@ AppTimerHandle timer_handle;
 #define FALSE 0
 #define TRUE 1
 #define DEBUG 0
+#define MAX_BPM 120
+#define MIN_BPM 20
 
 const VibePattern short_vibe = {
       .durations = (uint32_t []) {50},
@@ -116,8 +118,10 @@ void set_bpm_str() {
 void up_single_click_handler(ClickRecognizerRef recognizer, Window *window_2) {
   (void)recognizer;
   (void)window_2;
-  bpm = bpm + 2;
-  set_bpm_str();
+  if (bpm < MAX_BPM) {
+    bpm = bpm + 2;
+    set_bpm_str();
+  }
 }
 
 
@@ -125,8 +129,10 @@ void up_single_click_handler(ClickRecognizerRef recognizer, Window *window_2) {
 void down_single_click_handler(ClickRecognizerRef recognizer, Window *window) {
   (void)recognizer;
   (void)window;
-  bpm = bpm - 2;
-  set_bpm_str();
+  if (bpm > MIN_BPM) {
+    bpm = bpm - 2;
+    set_bpm_str();
+  }
 }
 
 
@@ -169,7 +175,7 @@ void select_long_click_handler(ClickRecognizerRef recognizer, Window *window) {
       mini_snprintf(time_sig_string, 20, "2/2 Time");
       break;
     case 2:
-      mini_snprintf(time_sig_string, 20, "Time Signature Disabled");
+      mini_snprintf(time_sig_string, 20, "No Time Sig");
       time_sig = 0;
       break;
     default:
@@ -229,11 +235,11 @@ void display_select_text(){
   text_layer_set_text_alignment(&select_text_layer, GTextAlignmentRight);
   text_layer_set_text(&select_text_layer,"Toggle On/Off ->");
 
-  text_layer_init(&select_text_layer2, GRect(0,75,144,20));
+  text_layer_init(&select_text_layer2, GRect(0,77,144,20));
   text_layer_set_font(&select_text_layer2, fonts_get_system_font(FONT_KEY_GOTHIC_14));
   layer_add_child(&window.layer, &select_text_layer2.layer);
   text_layer_set_text_alignment(&select_text_layer2, GTextAlignmentRight);
-  text_layer_set_text(&select_text_layer2,"Hold To Change Sig ->");
+  text_layer_set_text(&select_text_layer2,"Hold To Change Time Sig ->");
 
   if (DEBUG) {
     text_layer_set_background_color(&select_text_layer, GColorBlack);
@@ -286,7 +292,7 @@ void handle_init(AppContextRef ctx) {
 
   
   // setup Time Sig
-  text_layer_init(&time_sig_text_layer, GRect((144/2) - 50 ,95, 100,29));
+  text_layer_init(&time_sig_text_layer, GRect(0 ,95, 144 , 32));
   text_layer_set_text_alignment(&time_sig_text_layer, GTextAlignmentCenter);
   text_layer_set_font(&time_sig_text_layer, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
   if (DEBUG) {

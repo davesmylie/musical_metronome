@@ -54,345 +54,345 @@ LOAD /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi
  .pbl_header    0x0000000000000000       0x7c src/pulse.c.1.o
                 0x0000000000000000                __pbl_app_info
 
-.text           0x000000000000007c     0x1918
+.text           0x000000000000007c     0x1928
  *(.text)
  .text          0x000000000000007c        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
  .text          0x000000000000007c       0x68 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
  .text          0x00000000000000e4      0x460 src/mini-printf.c.1.o
                 0x00000000000002b0                mini_vsnprintf
                 0x0000000000000510                mini_snprintf
- .text          0x0000000000000544      0x8c4 src/pulse.c.1.o
+ .text          0x0000000000000544      0x8d4 src/pulse.c.1.o
                 0x0000000000000544                get_interval
                 0x000000000000056c                do_vibe
                 0x00000000000005c8                handle_timer
                 0x0000000000000634                set_bpm_str
                 0x000000000000067c                up_single_click_handler
-                0x00000000000006b0                down_single_click_handler
-                0x00000000000006e4                select_single_click_handler
-                0x00000000000007b8                select_long_click_handler
-                0x00000000000008b0                click_config_provider
-                0x0000000000000928                display_title_string
-                0x00000000000009a8                display_up_down_text
-                0x0000000000000ab0                display_select_text
-                0x0000000000000bb8                handle_init
-                0x0000000000000dc0                pbl_main
- .text          0x0000000000000e08      0xb8c /Users/dgs/code/pebble/musical_metronome/lib/libpebble.a(tmpE96Sgtpebble_os.o)
-                0x0000000000000e08                animation_init
-                0x0000000000000e14                animation_set_delay
-                0x0000000000000e20                animation_set_duration
-                0x0000000000000e2c                animation_set_curve
-                0x0000000000000e38                animation_set_handlers
-                0x0000000000000e44                animation_set_implementation
-                0x0000000000000e50                animation_get_context
-                0x0000000000000e5c                animation_schedule
-                0x0000000000000e68                animation_unschedule
-                0x0000000000000e74                animation_unschedule_all
-                0x0000000000000e80                animation_is_scheduled
-                0x0000000000000e8c                app_timer_send_event
-                0x0000000000000e98                app_timer_cancel_event
-                0x0000000000000ea4                app_event_loop
-                0x0000000000000eb0                bmp_init_container
-                0x0000000000000ebc                bmp_deinit_container
-                0x0000000000000ec8                cos_lookup
-                0x0000000000000ed4                fonts_get_system_font
-                0x0000000000000ee0                fonts_load_custom_font
-                0x0000000000000eec                fonts_unload_custom_font
-                0x0000000000000ef8                graphics_context_set_stroke_color
-                0x0000000000000f04                graphics_context_set_fill_color
-                0x0000000000000f10                graphics_context_set_text_color
-                0x0000000000000f1c                graphics_context_set_compositing_mode
-                0x0000000000000f28                graphics_draw_pixel
-                0x0000000000000f34                graphics_draw_line
-                0x0000000000000f40                graphics_fill_rect
-                0x0000000000000f4c                graphics_draw_circle
-                0x0000000000000f58                graphics_fill_circle
-                0x0000000000000f64                graphics_draw_round_rect
-                0x0000000000000f70                get_time
-                0x0000000000000f7c                gpath_init
-                0x0000000000000f88                gpath_move_to
-                0x0000000000000f94                gpath_rotate_to
-                0x0000000000000fa0                gpath_draw_outline
-                0x0000000000000fac                gpath_draw_filled
-                0x0000000000000fb8                grect_center_point
-                0x0000000000000fc4                layer_mark_dirty
-                0x0000000000000fd0                layer_remove_from_parent
-                0x0000000000000fdc                layer_add_child
-                0x0000000000000fe8                layer_get_frame
-                0x0000000000000ff4                layer_set_frame
-                0x0000000000001000                layer_set_hidden
-                0x000000000000100c                layer_init
-                0x0000000000001018                light_enable
-                0x0000000000001024                light_enable_interaction
-                0x0000000000001030                psleep
-                0x000000000000103c                resource_init_current_app
-                0x0000000000001048                resource_get_handle
-                0x0000000000001054                resource_load
-                0x0000000000001060                resource_load_byte_range
-                0x000000000000106c                resource_size
-                0x0000000000001078                rotbmp_deinit_container
-                0x0000000000001084                rotbmp_init_container
-                0x0000000000001090                rotbmp_pair_deinit_container
-                0x000000000000109c                rotbmp_pair_init_container
-                0x00000000000010a8                rotbmp_pair_layer_set_src_ic
-                0x00000000000010b4                rotbmp_pair_layer_set_angle
-                0x00000000000010c0                window_init
-                0x00000000000010cc                window_stack_push
-                0x00000000000010d8                window_set_click_config_provider
-                0x00000000000010e4                window_set_background_color
-                0x00000000000010f0                window_render
-                0x00000000000010fc                window_set_fullscreen
-                0x0000000000001108                sin_lookup
-                0x0000000000001114                string_format_time
-                0x0000000000001120                text_layer_init
-                0x000000000000112c                text_layer_get_text
-                0x0000000000001138                text_layer_set_text
-                0x0000000000001144                text_layer_set_font
-                0x0000000000001150                text_layer_set_text_color
-                0x000000000000115c                text_layer_set_background_color
-                0x0000000000001168                vibes_double_pulse
-                0x0000000000001174                vibes_enqueue_custom_pattern
-                0x0000000000001180                vibes_long_pulse
-                0x000000000000118c                vibes_short_pulse
-                0x0000000000001198                app_get_current_graphics_context
-                0x00000000000011a4                clock_is_24h_style
-                0x00000000000011b0                property_animation_init_layer_frame
-                0x00000000000011bc                text_layer_set_text_alignment
-                0x00000000000011c8                graphics_draw_bitmap_in_rect
-                0x00000000000011d4                graphics_text_draw
-                0x00000000000011e0                layer_set_bounds
-                0x00000000000011ec                layer_get_bounds
-                0x00000000000011f8                layer_set_update_proc
-                0x0000000000001204                layer_get_window
-                0x0000000000001210                layer_remove_child_layers
-                0x000000000000121c                layer_insert_below_sibling
-                0x0000000000001228                layer_insert_above_sibling
-                0x0000000000001234                layer_get_hidden
-                0x0000000000001240                layer_set_clips
-                0x000000000000124c                layer_get_clips
-                0x0000000000001258                text_layer_get_max_used_size
-                0x0000000000001264                text_layer_set_size
-                0x0000000000001270                text_layer_set_overflow_mode
-                0x000000000000127c                graphics_text_layout_get_max_used_size
-                0x0000000000001288                inverter_layer_init
-                0x0000000000001294                bitmap_layer_init
-                0x00000000000012a0                bitmap_layer_set_bitmap
-                0x00000000000012ac                bitmap_layer_set_alignment
-                0x00000000000012b8                bitmap_layer_set_background_color
-                0x00000000000012c4                bitmap_layer_set_compositing_mode
-                0x00000000000012d0                heap_bitmap_init
-                0x00000000000012dc                heap_bitmap_deinit
-                0x00000000000012e8                click_recognizer_get_button_id
-                0x00000000000012f4                click_number_of_clicks_counted
-                0x0000000000001300                menu_cell_basic_draw
-                0x000000000000130c                menu_cell_title_draw
-                0x0000000000001318                menu_cell_basic_header_draw
-                0x0000000000001324                menu_layer_init
-                0x0000000000001330                menu_layer_get_layer
-                0x000000000000133c                menu_layer_set_callbacks
-                0x0000000000001348                menu_layer_set_click_config_onto_window
-                0x0000000000001354                menu_layer_set_selected_next
-                0x0000000000001360                menu_layer_set_selected_index
-                0x000000000000136c                menu_layer_reload_data
-                0x0000000000001378                menu_index_compare
-                0x0000000000001384                scroll_layer_init
-                0x0000000000001390                scroll_layer_add_child
-                0x000000000000139c                scroll_layer_set_click_config_onto_window
-                0x00000000000013a8                scroll_layer_set_callbacks
-                0x00000000000013b4                scroll_layer_set_context
-                0x00000000000013c0                scroll_layer_set_content_offset
-                0x00000000000013cc                scroll_layer_get_content_offset
-                0x00000000000013d8                scroll_layer_set_content_size
-                0x00000000000013e4                scroll_layer_get_content_size
-                0x00000000000013f0                scroll_layer_set_frame
-                0x00000000000013fc                scroll_layer_scroll_up_click_handler
-                0x0000000000001408                scroll_layer_scroll_down_click_handler
-                0x0000000000001414                simple_menu_layer_init
-                0x0000000000001420                simple_menu_layer_get_layer
-                0x000000000000142c                simple_menu_layer_get_selected_index
-                0x0000000000001438                simple_menu_layer_set_selected_index
-                0x0000000000001444                window_deinit
-                0x0000000000001450                window_set_click_config_provider_with_context
-                0x000000000000145c                window_get_click_config_provider
-                0x0000000000001468                window_set_window_handlers
-                0x0000000000001474                window_get_root_layer
-                0x0000000000001480                window_get_fullscreen
-                0x000000000000148c                window_set_status_bar_icon
-                0x0000000000001498                window_is_loaded
-                0x00000000000014a4                window_stack_pop
-                0x00000000000014b0                window_stack_pop_all
-                0x00000000000014bc                window_stack_contains_window
-                0x00000000000014c4                window_stack_get_top_window
-                0x00000000000014cc                window_stack_remove
-                0x00000000000014d4                property_animation_init
-                0x00000000000014dc                property_animation_update_int16
-                0x00000000000014e4                property_animation_update_gpoint
-                0x00000000000014ec                property_animation_update_grect
-                0x00000000000014f4                app_message_register_callbacks
-                0x00000000000014fc                app_message_deregister_callbacks
-                0x0000000000001504                app_message_out_get
-                0x000000000000150c                app_message_out_send
-                0x0000000000001514                app_message_out_release
-                0x000000000000151c                app_sync_init
-                0x0000000000001524                app_sync_deinit
-                0x000000000000152c                app_sync_set
-                0x0000000000001534                app_sync_get
-                0x000000000000153c                dict_calc_buffer_size
-                0x0000000000001544                dict_write_begin
-                0x000000000000154c                dict_write_data
-                0x0000000000001554                dict_write_cstring
-                0x000000000000155c                dict_write_int
-                0x0000000000001564                dict_write_uint8
-                0x000000000000156c                dict_write_uint16
-                0x0000000000001574                dict_write_uint32
-                0x000000000000157c                dict_write_int8
-                0x0000000000001584                dict_write_int16
-                0x000000000000158c                dict_write_int32
-                0x0000000000001594                dict_write_end
-                0x000000000000159c                dict_read_begin_from_buffer
-                0x00000000000015a4                dict_read_next
-                0x00000000000015ac                dict_read_first
-                0x00000000000015b4                dict_serialize_tuplets
-                0x00000000000015bc                dict_serialize_tuplets_to_buffer
-                0x00000000000015c4                dict_serialize_tuplets_to_buffer_with_iter
-                0x00000000000015cc                dict_write_tuplet
-                0x00000000000015d4                dict_calc_buffer_size_from_tuplets
-                0x00000000000015dc                dict_merge
-                0x00000000000015e4                dict_find
-                0x00000000000015ec                action_bar_layer_init
-                0x00000000000015f4                action_bar_layer_set_context
-                0x00000000000015fc                action_bar_layer_set_click_config_provider
-                0x0000000000001604                action_bar_layer_set_icon
-                0x000000000000160c                action_bar_layer_clear_icon
-                0x0000000000001614                action_bar_layer_add_to_window
-                0x000000000000161c                action_bar_layer_remove_from_window
-                0x0000000000001624                action_bar_layer_set_background_color
-                0x000000000000162c                number_window_init
-                0x0000000000001634                number_window_set_label
-                0x000000000000163c                number_window_set_max
-                0x0000000000001644                number_window_set_min
-                0x000000000000164c                number_window_set_value
-                0x0000000000001654                number_window_set_step_size
-                0x000000000000165c                number_window_get_value
-                0x0000000000001664                clock_copy_time_string
- .text          0x0000000000001994        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
- .text          0x0000000000001994        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
- .text          0x0000000000001994        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+                0x00000000000006b8                down_single_click_handler
+                0x00000000000006f4                select_single_click_handler
+                0x00000000000007c8                select_long_click_handler
+                0x00000000000008c0                click_config_provider
+                0x0000000000000938                display_title_string
+                0x00000000000009b8                display_up_down_text
+                0x0000000000000ac0                display_select_text
+                0x0000000000000bc8                handle_init
+                0x0000000000000dd0                pbl_main
+ .text          0x0000000000000e18      0xb8c /Users/dgs/code/pebble/musical_metronome/lib/libpebble.a(tmpE96Sgtpebble_os.o)
+                0x0000000000000e18                animation_init
+                0x0000000000000e24                animation_set_delay
+                0x0000000000000e30                animation_set_duration
+                0x0000000000000e3c                animation_set_curve
+                0x0000000000000e48                animation_set_handlers
+                0x0000000000000e54                animation_set_implementation
+                0x0000000000000e60                animation_get_context
+                0x0000000000000e6c                animation_schedule
+                0x0000000000000e78                animation_unschedule
+                0x0000000000000e84                animation_unschedule_all
+                0x0000000000000e90                animation_is_scheduled
+                0x0000000000000e9c                app_timer_send_event
+                0x0000000000000ea8                app_timer_cancel_event
+                0x0000000000000eb4                app_event_loop
+                0x0000000000000ec0                bmp_init_container
+                0x0000000000000ecc                bmp_deinit_container
+                0x0000000000000ed8                cos_lookup
+                0x0000000000000ee4                fonts_get_system_font
+                0x0000000000000ef0                fonts_load_custom_font
+                0x0000000000000efc                fonts_unload_custom_font
+                0x0000000000000f08                graphics_context_set_stroke_color
+                0x0000000000000f14                graphics_context_set_fill_color
+                0x0000000000000f20                graphics_context_set_text_color
+                0x0000000000000f2c                graphics_context_set_compositing_mode
+                0x0000000000000f38                graphics_draw_pixel
+                0x0000000000000f44                graphics_draw_line
+                0x0000000000000f50                graphics_fill_rect
+                0x0000000000000f5c                graphics_draw_circle
+                0x0000000000000f68                graphics_fill_circle
+                0x0000000000000f74                graphics_draw_round_rect
+                0x0000000000000f80                get_time
+                0x0000000000000f8c                gpath_init
+                0x0000000000000f98                gpath_move_to
+                0x0000000000000fa4                gpath_rotate_to
+                0x0000000000000fb0                gpath_draw_outline
+                0x0000000000000fbc                gpath_draw_filled
+                0x0000000000000fc8                grect_center_point
+                0x0000000000000fd4                layer_mark_dirty
+                0x0000000000000fe0                layer_remove_from_parent
+                0x0000000000000fec                layer_add_child
+                0x0000000000000ff8                layer_get_frame
+                0x0000000000001004                layer_set_frame
+                0x0000000000001010                layer_set_hidden
+                0x000000000000101c                layer_init
+                0x0000000000001028                light_enable
+                0x0000000000001034                light_enable_interaction
+                0x0000000000001040                psleep
+                0x000000000000104c                resource_init_current_app
+                0x0000000000001058                resource_get_handle
+                0x0000000000001064                resource_load
+                0x0000000000001070                resource_load_byte_range
+                0x000000000000107c                resource_size
+                0x0000000000001088                rotbmp_deinit_container
+                0x0000000000001094                rotbmp_init_container
+                0x00000000000010a0                rotbmp_pair_deinit_container
+                0x00000000000010ac                rotbmp_pair_init_container
+                0x00000000000010b8                rotbmp_pair_layer_set_src_ic
+                0x00000000000010c4                rotbmp_pair_layer_set_angle
+                0x00000000000010d0                window_init
+                0x00000000000010dc                window_stack_push
+                0x00000000000010e8                window_set_click_config_provider
+                0x00000000000010f4                window_set_background_color
+                0x0000000000001100                window_render
+                0x000000000000110c                window_set_fullscreen
+                0x0000000000001118                sin_lookup
+                0x0000000000001124                string_format_time
+                0x0000000000001130                text_layer_init
+                0x000000000000113c                text_layer_get_text
+                0x0000000000001148                text_layer_set_text
+                0x0000000000001154                text_layer_set_font
+                0x0000000000001160                text_layer_set_text_color
+                0x000000000000116c                text_layer_set_background_color
+                0x0000000000001178                vibes_double_pulse
+                0x0000000000001184                vibes_enqueue_custom_pattern
+                0x0000000000001190                vibes_long_pulse
+                0x000000000000119c                vibes_short_pulse
+                0x00000000000011a8                app_get_current_graphics_context
+                0x00000000000011b4                clock_is_24h_style
+                0x00000000000011c0                property_animation_init_layer_frame
+                0x00000000000011cc                text_layer_set_text_alignment
+                0x00000000000011d8                graphics_draw_bitmap_in_rect
+                0x00000000000011e4                graphics_text_draw
+                0x00000000000011f0                layer_set_bounds
+                0x00000000000011fc                layer_get_bounds
+                0x0000000000001208                layer_set_update_proc
+                0x0000000000001214                layer_get_window
+                0x0000000000001220                layer_remove_child_layers
+                0x000000000000122c                layer_insert_below_sibling
+                0x0000000000001238                layer_insert_above_sibling
+                0x0000000000001244                layer_get_hidden
+                0x0000000000001250                layer_set_clips
+                0x000000000000125c                layer_get_clips
+                0x0000000000001268                text_layer_get_max_used_size
+                0x0000000000001274                text_layer_set_size
+                0x0000000000001280                text_layer_set_overflow_mode
+                0x000000000000128c                graphics_text_layout_get_max_used_size
+                0x0000000000001298                inverter_layer_init
+                0x00000000000012a4                bitmap_layer_init
+                0x00000000000012b0                bitmap_layer_set_bitmap
+                0x00000000000012bc                bitmap_layer_set_alignment
+                0x00000000000012c8                bitmap_layer_set_background_color
+                0x00000000000012d4                bitmap_layer_set_compositing_mode
+                0x00000000000012e0                heap_bitmap_init
+                0x00000000000012ec                heap_bitmap_deinit
+                0x00000000000012f8                click_recognizer_get_button_id
+                0x0000000000001304                click_number_of_clicks_counted
+                0x0000000000001310                menu_cell_basic_draw
+                0x000000000000131c                menu_cell_title_draw
+                0x0000000000001328                menu_cell_basic_header_draw
+                0x0000000000001334                menu_layer_init
+                0x0000000000001340                menu_layer_get_layer
+                0x000000000000134c                menu_layer_set_callbacks
+                0x0000000000001358                menu_layer_set_click_config_onto_window
+                0x0000000000001364                menu_layer_set_selected_next
+                0x0000000000001370                menu_layer_set_selected_index
+                0x000000000000137c                menu_layer_reload_data
+                0x0000000000001388                menu_index_compare
+                0x0000000000001394                scroll_layer_init
+                0x00000000000013a0                scroll_layer_add_child
+                0x00000000000013ac                scroll_layer_set_click_config_onto_window
+                0x00000000000013b8                scroll_layer_set_callbacks
+                0x00000000000013c4                scroll_layer_set_context
+                0x00000000000013d0                scroll_layer_set_content_offset
+                0x00000000000013dc                scroll_layer_get_content_offset
+                0x00000000000013e8                scroll_layer_set_content_size
+                0x00000000000013f4                scroll_layer_get_content_size
+                0x0000000000001400                scroll_layer_set_frame
+                0x000000000000140c                scroll_layer_scroll_up_click_handler
+                0x0000000000001418                scroll_layer_scroll_down_click_handler
+                0x0000000000001424                simple_menu_layer_init
+                0x0000000000001430                simple_menu_layer_get_layer
+                0x000000000000143c                simple_menu_layer_get_selected_index
+                0x0000000000001448                simple_menu_layer_set_selected_index
+                0x0000000000001454                window_deinit
+                0x0000000000001460                window_set_click_config_provider_with_context
+                0x000000000000146c                window_get_click_config_provider
+                0x0000000000001478                window_set_window_handlers
+                0x0000000000001484                window_get_root_layer
+                0x0000000000001490                window_get_fullscreen
+                0x000000000000149c                window_set_status_bar_icon
+                0x00000000000014a8                window_is_loaded
+                0x00000000000014b4                window_stack_pop
+                0x00000000000014c0                window_stack_pop_all
+                0x00000000000014cc                window_stack_contains_window
+                0x00000000000014d4                window_stack_get_top_window
+                0x00000000000014dc                window_stack_remove
+                0x00000000000014e4                property_animation_init
+                0x00000000000014ec                property_animation_update_int16
+                0x00000000000014f4                property_animation_update_gpoint
+                0x00000000000014fc                property_animation_update_grect
+                0x0000000000001504                app_message_register_callbacks
+                0x000000000000150c                app_message_deregister_callbacks
+                0x0000000000001514                app_message_out_get
+                0x000000000000151c                app_message_out_send
+                0x0000000000001524                app_message_out_release
+                0x000000000000152c                app_sync_init
+                0x0000000000001534                app_sync_deinit
+                0x000000000000153c                app_sync_set
+                0x0000000000001544                app_sync_get
+                0x000000000000154c                dict_calc_buffer_size
+                0x0000000000001554                dict_write_begin
+                0x000000000000155c                dict_write_data
+                0x0000000000001564                dict_write_cstring
+                0x000000000000156c                dict_write_int
+                0x0000000000001574                dict_write_uint8
+                0x000000000000157c                dict_write_uint16
+                0x0000000000001584                dict_write_uint32
+                0x000000000000158c                dict_write_int8
+                0x0000000000001594                dict_write_int16
+                0x000000000000159c                dict_write_int32
+                0x00000000000015a4                dict_write_end
+                0x00000000000015ac                dict_read_begin_from_buffer
+                0x00000000000015b4                dict_read_next
+                0x00000000000015bc                dict_read_first
+                0x00000000000015c4                dict_serialize_tuplets
+                0x00000000000015cc                dict_serialize_tuplets_to_buffer
+                0x00000000000015d4                dict_serialize_tuplets_to_buffer_with_iter
+                0x00000000000015dc                dict_write_tuplet
+                0x00000000000015e4                dict_calc_buffer_size_from_tuplets
+                0x00000000000015ec                dict_merge
+                0x00000000000015f4                dict_find
+                0x00000000000015fc                action_bar_layer_init
+                0x0000000000001604                action_bar_layer_set_context
+                0x000000000000160c                action_bar_layer_set_click_config_provider
+                0x0000000000001614                action_bar_layer_set_icon
+                0x000000000000161c                action_bar_layer_clear_icon
+                0x0000000000001624                action_bar_layer_add_to_window
+                0x000000000000162c                action_bar_layer_remove_from_window
+                0x0000000000001634                action_bar_layer_set_background_color
+                0x000000000000163c                number_window_init
+                0x0000000000001644                number_window_set_label
+                0x000000000000164c                number_window_set_max
+                0x0000000000001654                number_window_set_min
+                0x000000000000165c                number_window_set_value
+                0x0000000000001664                number_window_set_step_size
+                0x000000000000166c                number_window_get_value
+                0x0000000000001674                clock_copy_time_string
+ .text          0x00000000000019a4        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+ .text          0x00000000000019a4        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .text          0x00000000000019a4        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
 
-.glue_7         0x0000000000001994        0x0
+.glue_7         0x00000000000019a4        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x0000000000001994        0x0
+.glue_7t        0x00000000000019a4        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000001994        0x0
+.vfp11_veneer   0x00000000000019a4        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x0000000000001994        0x0
+.v4_bx          0x00000000000019a4        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.init           0x0000000000001994        0xc
- .init          0x0000000000001994        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
-                0x0000000000001994                _init
- .init          0x0000000000001998        0x8 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+.init           0x00000000000019a4        0xc
+ .init          0x00000000000019a4        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+                0x00000000000019a4                _init
+ .init          0x00000000000019a8        0x8 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
 
-.fini           0x00000000000019a0        0xc
- .fini          0x00000000000019a0        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
-                0x00000000000019a0                _fini
- .fini          0x00000000000019a4        0x8 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+.fini           0x00000000000019b0        0xc
+ .fini          0x00000000000019b0        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+                0x00000000000019b0                _fini
+ .fini          0x00000000000019b4        0x8 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
 
-.iplt           0x00000000000019ac        0x0
+.iplt           0x00000000000019bc        0x0
  .iplt          0x0000000000000000        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
 
-.text.memset    0x00000000000019ac       0x10
- .text.memset   0x00000000000019ac       0x10 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
-                0x00000000000019ac                memset
+.text.memset    0x00000000000019bc       0x10
+ .text.memset   0x00000000000019bc       0x10 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+                0x00000000000019bc                memset
 
-.data           0x00000000000019bc       0x10
+.data           0x00000000000019cc       0x10
  *(.data)
- .data          0x00000000000019bc        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
- .data          0x00000000000019bc        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
-                0x00000000000019bc                __dso_handle
- .data          0x00000000000019c0        0x0 src/mini-printf.c.1.o
- .data          0x00000000000019c0        0xc src/pulse.c.1.o
-                0x00000000000019c0                time_sig
- .data          0x00000000000019cc        0x0 /Users/dgs/code/pebble/musical_metronome/lib/libpebble.a(tmpE96Sgtpebble_os.o)
- .data          0x00000000000019cc        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
- .data          0x00000000000019cc        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
- .data          0x00000000000019cc        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+ .data          0x00000000000019cc        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .data          0x00000000000019cc        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+                0x00000000000019cc                __dso_handle
+ .data          0x00000000000019d0        0x0 src/mini-printf.c.1.o
+ .data          0x00000000000019d0        0xc src/pulse.c.1.o
+                0x00000000000019d0                time_sig
+ .data          0x00000000000019dc        0x0 /Users/dgs/code/pebble/musical_metronome/lib/libpebble.a(tmpE96Sgtpebble_os.o)
+ .data          0x00000000000019dc        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+ .data          0x00000000000019dc        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .data          0x00000000000019dc        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
 
-.igot.plt       0x00000000000019cc        0x0
+.igot.plt       0x00000000000019dc        0x0
  .igot.plt      0x0000000000000000        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
 
-.got            0x00000000000019cc       0x44
- .got           0x00000000000019cc       0x44 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+.got            0x00000000000019dc       0x44
+ .got           0x00000000000019dc       0x44 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
 
-.got.plt        0x0000000000001a10        0xc
- .got.plt       0x0000000000001a10        0xc /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
-                0x0000000000001a10                _GLOBAL_OFFSET_TABLE_
+.got.plt        0x0000000000001a20        0xc
+ .got.plt       0x0000000000001a20        0xc /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+                0x0000000000001a20                _GLOBAL_OFFSET_TABLE_
 
-.init_array     0x0000000000001a1c        0x4
- .init_array    0x0000000000001a1c        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+.init_array     0x0000000000001a2c        0x4
+ .init_array    0x0000000000001a2c        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
 
-.fini_array     0x0000000000001a20        0x4
- .fini_array    0x0000000000001a20        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+.fini_array     0x0000000000001a30        0x4
+ .fini_array    0x0000000000001a30        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
 
-.jcr            0x0000000000001a24        0x4
- .jcr           0x0000000000001a24        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
- .jcr           0x0000000000001a24        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+.jcr            0x0000000000001a34        0x4
+ .jcr           0x0000000000001a34        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .jcr           0x0000000000001a34        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
 
 .data.rel.ro.local
-                0x0000000000001a28       0x10
+                0x0000000000001a38       0x10
  .data.rel.ro.local
-                0x0000000000001a28       0x10 src/pulse.c.1.o
-                0x0000000000001a28                short_vibe
-                0x0000000000001a30                long_vibe
+                0x0000000000001a38       0x10 src/pulse.c.1.o
+                0x0000000000001a38                short_vibe
+                0x0000000000001a40                long_vibe
 
-.bss            0x0000000000001a38      0x3f8
+.bss            0x0000000000001a48      0x3f8
  *(.bss)
- .bss           0x0000000000001a38        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
- .bss           0x0000000000001a38       0x1c /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
- .bss           0x0000000000001a54        0x0 src/mini-printf.c.1.o
- .bss           0x0000000000001a54        0x8 src/pulse.c.1.o
-                0x0000000000001a54                click_counter
-                0x0000000000001a58                time_sig_counter
- .bss           0x0000000000001a5c        0x0 /Users/dgs/code/pebble/musical_metronome/lib/libpebble.a(tmpE96Sgtpebble_os.o)
- .bss           0x0000000000001a5c        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
- .bss           0x0000000000001a5c        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
- .bss           0x0000000000001a5c        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
- COMMON         0x0000000000001a5c      0x3d4 src/pulse.c.1.o
-                0x0000000000001a5c                select_text_layer
-                0x0000000000001a94                select_str
-                0x0000000000001af8                timer_handle
-                0x0000000000001afc                title_str
-                0x0000000000001b60                time_sig_string
-                0x0000000000001b74                select_str2
-                0x0000000000001bd8                down_text_layer
-                0x0000000000001c10                bpm_str
-                0x0000000000001c18                running
-                0x0000000000001c1c                up_text_layer
-                0x0000000000001c54                click_str
-                0x0000000000001cb8                time_sig_text_layer
-                0x0000000000001cf0                select_text_layer2
-                0x0000000000001d28                bpm
-                0x0000000000001d2c                g_ctx
-                0x0000000000001d30                bpm_text_layer
-                0x0000000000001d68                title_text_layer
-                0x0000000000001da0                status_text_layer
-                0x0000000000001dd8                window
+ .bss           0x0000000000001a48        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
+ .bss           0x0000000000001a48       0x1c /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .bss           0x0000000000001a64        0x0 src/mini-printf.c.1.o
+ .bss           0x0000000000001a64        0x8 src/pulse.c.1.o
+                0x0000000000001a64                click_counter
+                0x0000000000001a68                time_sig_counter
+ .bss           0x0000000000001a6c        0x0 /Users/dgs/code/pebble/musical_metronome/lib/libpebble.a(tmpE96Sgtpebble_os.o)
+ .bss           0x0000000000001a6c        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
+ .bss           0x0000000000001a6c        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .bss           0x0000000000001a6c        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+ COMMON         0x0000000000001a6c      0x3d4 src/pulse.c.1.o
+                0x0000000000001a6c                select_text_layer
+                0x0000000000001aa4                select_str
+                0x0000000000001b08                timer_handle
+                0x0000000000001b0c                title_str
+                0x0000000000001b70                time_sig_string
+                0x0000000000001b84                select_str2
+                0x0000000000001be8                down_text_layer
+                0x0000000000001c20                bpm_str
+                0x0000000000001c28                running
+                0x0000000000001c2c                up_text_layer
+                0x0000000000001c64                click_str
+                0x0000000000001cc8                time_sig_text_layer
+                0x0000000000001d00                select_text_layer2
+                0x0000000000001d38                bpm
+                0x0000000000001d3c                g_ctx
+                0x0000000000001d40                bpm_text_layer
+                0x0000000000001d78                title_text_layer
+                0x0000000000001db0                status_text_layer
+                0x0000000000001de8                window
 
-DISCARD         0x0000000000001e30        0x4
+DISCARD         0x0000000000001e40        0x4
  libc.a(*)
  libm.a(*)
  libgcc.a(*)
  *(.eh_frame)
- .eh_frame      0x0000000000001e30        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
- .eh_frame      0x0000000000001e30        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
+ .eh_frame      0x0000000000001e40        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtbegin.o
+ .eh_frame      0x0000000000001e40        0x4 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
 OUTPUT(/Users/dgs/code/pebble/musical_metronome/build/pebble-app.elf elf32-littlearm)
 
-.rodata         0x0000000000001e34      0x15c
- .rodata        0x0000000000001e34      0x15c src/pulse.c.1.o
+.rodata         0x0000000000001e44      0x154
+ .rodata        0x0000000000001e44      0x154 src/pulse.c.1.o
 
-.rel.dyn        0x0000000000001f90        0x0
+.rel.dyn        0x0000000000001f98        0x0
  .rel.iplt      0x0000000000000000        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
  .rel.got       0x0000000000000000        0x0 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
 
@@ -423,11 +423,11 @@ OUTPUT(/Users/dgs/code/pebble/musical_metronome/build/pebble-app.elf elf32-littl
  .comment       0x0000000000000000       0x4f /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/../../../../arm-none-eabi/lib/thumb2/libc.a(lib_a-memset.o)
  .comment       0x0000000000000000       0x4f /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtend.o
 
-.debug_line     0x0000000000000000      0x469
+.debug_line     0x0000000000000000      0x46b
  .debug_line    0x0000000000000000       0x71 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
  .debug_line    0x0000000000000071      0x192 src/mini-printf.c.1.o
- .debug_line    0x0000000000000203      0x1f1 src/pulse.c.1.o
- .debug_line    0x00000000000003f4       0x75 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
+ .debug_line    0x0000000000000203      0x1f3 src/pulse.c.1.o
+ .debug_line    0x00000000000003f6       0x75 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crtn.o
 
 .debug_info     0x0000000000000000     0x1a99
  .debug_info    0x0000000000000000       0xb2 /Users/dgs/code/pebble/pebble-dev/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.6.3/thumb2/crti.o
